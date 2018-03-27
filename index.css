@@ -1,0 +1,61 @@
+/* Code adapted from
+http://www.22bulbjungle.com/css-hover-effects-fade-text-background-source-code/ */
+
+body {
+  background-color: #ffffff;
+}
+
+.wrapper{
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img{
+  opacity: 1;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  height: auto;
+  transition: .5s ease;
+}
+
+.content{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.content a{
+  font-size: 40px;
+  display: block;
+  background-color: #009999;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.overlay{
+  opacity: 0
+}
+
+.wrapper:hover img{
+  opacity: .5
+}
+
+.wrapper:hover .overlay{
+  opacity: 1
+}
